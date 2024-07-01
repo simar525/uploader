@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .upload-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #status {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload a ZIP file</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file" accept=".zip" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
