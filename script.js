@@ -14,7 +14,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
     formData.append('file', file);
 
     try {
-        const response = await fetch('https://your-external-webhook-url.com/upload', {
+        const response = await fetch('https://hook.integrator.boost.space/hm3iqafwxsba5g25qvk97c2e8480ly5b', {
             method: 'POST',
             body: formData,
         });
